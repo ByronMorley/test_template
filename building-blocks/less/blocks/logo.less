@@ -1,0 +1,79 @@
+@import "../_core/_config.less";
+
+/*-----------------------------------------
+            LOGO.LESS
+-----------------------------------------*/
+
+.logo-block {
+
+    ul {
+        overflow:hidden;
+    }
+    @media @XL, @LG, @MD, @SM {
+
+        ul.right {
+            li {
+                float: right;
+                margin-left: 20px;
+                margin-right: 0px;
+            }
+        }
+
+        ul.left {
+            li {
+                float: left;
+                margin-right: 20px;
+                margin-left: 0px;
+            }
+        }
+        ul.center {
+            li {
+
+                position: relative;
+                width: 100%;
+                text-align:center;
+
+                img {
+                    overflow: hidden;
+                    position:relative;
+                    display: inline-block;
+                    max-width:100%;
+                    height:auto;
+                }
+            }
+        }
+    }
+
+    li {
+        float:left;
+        margin-right:20px;
+        margin-bottom:0px;
+
+        &:last-child {
+            margin-bottom:0px;
+        }
+
+        img {
+            max-height:120px;
+            width:auto;
+        }
+    }
+
+    @media @XXS, @XS {
+        li {
+
+            position: relative;
+            width: 100%;
+            text-align:center;
+            margin-bottom:20px;
+
+            img {
+                overflow: hidden;
+                position:relative;
+                display: inline-block;
+                max-width:100%;
+                height:auto;
+            }
+        }
+    }
+}

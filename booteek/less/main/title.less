@@ -1,0 +1,119 @@
+@import "../_core/_config.less";
+
+/*-----------------------------------------
+                TITLE.LESS
+-----------------------------------------*/
+
+.title-pane {
+
+    h1.title {
+        font-size:24px;
+        margin:0;
+        line-height: normal;
+        color:@dark-grey;
+    }
+
+    border-bottom:1px solid @mid-grey;
+    margin-bottom:10px;
+
+
+    .section.left {
+        width:80%;
+        @media @SM {
+            width:70%;
+        }
+    }
+    .section.right {
+        width:20%;
+        @media @SM {
+            width:30%;
+        }
+    }
+
+    .section.left{
+        @media @XXS, @XS {
+            width:100%;
+        }
+    }
+
+
+    .section {
+        height:40px;
+        margin-bottom:10px;
+    }
+
+    @media @XXS, @XS{
+       .title {
+           position:relative;
+       }
+        .section {
+            height:auto !important;
+            &.right{
+                display:none;
+            }
+        }
+    }
+
+
+
+    .icon-rack-wrapper {
+        position: relative;
+        width:100%;
+        height:100%;
+        @media @XXS, @XS{
+            display:none;
+        }
+
+    }
+    .icon-rack {
+       height:auto;
+    }
+}
+
+.title {
+
+    a, span {
+        &:hover {
+            text-decoration: none;
+            border: none;
+        }
+    }
+
+    &.main {
+
+        span {
+
+            padding-right: 3px;
+            &:nth-child(1) {
+                color: @light-color;
+            }
+
+            &:nth-child(2) {
+                color: @mid-grey;
+            }
+
+            &:nth-child(3) {
+                color: @alpha-color;
+            }
+        }
+    }
+
+    &.page-title, &.aside-title {
+
+        text-align: left;
+        float: left;
+        padding-right: 0;
+
+        line-height: 40px;
+        margin: 0 0 10px 0;
+        color: @light-color;
+        font-weight: 700;
+
+        font-size: 30px;
+
+        @media @XXS, @XS, @SM {
+            font-size: 26px;
+        }
+    }
+
+}

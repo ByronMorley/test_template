@@ -1,0 +1,35 @@
+@import "../_core/_config.less";
+
+/*-----------------------------------------
+            NAV-TABS.LESS
+-----------------------------------------*/
+
+.nav {
+    &.nav-tabs, &.nav-pills {
+        background-color: @alpha-color;
+        padding:10px 10px 0 10px;
+    }
+    &.nav-pills {
+        padding:10px;
+    }
+    .nav-link {
+        color:@light-color;
+
+        &.active {
+            background-color:@light-color;
+            color:@alpha-color;
+        }
+    }
+}
+.tab-content {
+
+    .block {
+        border-left:1px solid @alpha-color;
+        border-right:1px solid @alpha-color;
+        border-bottom:1px solid @alpha-color;
+
+        border-radius: 0px 0px 5px 5px;
+        -moz-border-radius: 0px 0px 5px 5px;
+        -webkit-border-radius: 0px 0px 5px 5px;
+    }
+}

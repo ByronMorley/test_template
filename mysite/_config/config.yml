@@ -1,0 +1,38 @@
+---
+Name: mysite
+After:
+  - 'framework/*'
+  - 'cms/*'
+---
+# YAML configuration for SilverStripe
+# See http://doc.silverstripe.org/framework/en/topics/configuration
+# Caution: Indentation through two spaces, not tabs
+SSViewer:
+  theme: 'stasis'
+  rewrite_hash_links: false
+
+i18n:
+  common_locales:
+    en_GB:
+      name: English (GB)
+      native: English
+    cy_GB:
+      name: Welsh (GB)
+      native: Cymraeg
+
+SiteTree:
+  extensions:
+    - Translatable
+    -
+SiteConfig:
+  extensions:
+    - Translatable
+
+Director:
+  environment_type: 'dev'
+
+LeftAndMain:
+  extra_requirements_css:
+    - mysite/css/admin.css
+
+

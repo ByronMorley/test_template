@@ -1,0 +1,10 @@
+---
+Name: cookie-club
+After: 'framework/*','cms/*'
+---
+Page:
+  extensions:
+    - CookieClub
+SiteConfig:
+  extensions:
+    - CookieAdmin

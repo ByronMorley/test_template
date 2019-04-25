@@ -1,0 +1,30 @@
+@import "../_core/_config.less";
+
+/*-----------------------------------------
+                POEM.LESS
+-----------------------------------------*/
+
+.block {
+    &.poem-block {
+        h3 {
+            color:@dark-color;
+            margin-bottom:20px;
+            font-size:22px;
+            span {
+                display:inline-block;
+                color:@mid-grey;
+            }
+        }
+        .content {
+            padding:20px;
+            font-size:16px;
+
+            color:#000;
+            line-height:36px;
+        }
+    }
+}
+
+.fade:not(.show) {
+    opacity: 1;
+}

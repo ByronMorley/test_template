@@ -1,0 +1,27 @@
+{
+  "name": "rgb-software/silverstripe-short-circuit",
+  "description": "custom content block for your page",
+  "type": "silverstripe-module",
+  "homepage": "http://github.com/your-vendor-name/module-name",
+  "keywords": ["silverstripe", "content", "building"],
+  "license": "BSD-3-Clause",
+  "authors": [
+    {"name": "Byron Morley","email": "byron@rgbsoftware.co.uk"}
+  ],
+  "support": {
+    "issues": "http://github.com/your-vendor-name/module-name/issues"
+  },
+  "config": {
+    "vendor-dir": "../"
+  },
+  "require": {
+
+  },
+  "extra": {
+    "installer-name": "short-circuit",
+    "screenshots": [
+      "relative/path/screenshot1.png",
+      "http://myhost.com/screenshot2.png"
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+---
+Name: short-circuit
+After: 'framework/*','cms/*'
+---
+SectionInputBlock:
+  extensions:
+    - InputBlockExtension
+Page_Controller:
+  extensions:
+    - ShortCircuit_Controller
+Page:
+  extensions:
+    - ShortCircuit
+Section:
+  extensions:
+    - SectionBlockExtension

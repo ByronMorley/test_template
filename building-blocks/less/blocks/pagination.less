@@ -1,0 +1,28 @@
+@import "../_core/_config.less";
+
+/*-----------------------------------------
+            PAGINATION.LESS
+-----------------------------------------*/
+
+.page-item.active .page-link {
+    z-index: 1;
+    color: #fff;
+    background-color: @alpha-color;
+    border-color: @alpha-color;
+}
+
+.pagination {
+    &.mx-right {
+        margin-left: auto!important;
+    }
+}
+.page-item {
+    &.disabled {
+        a.page-link {
+            background-color: @dark-color;
+            color:@mid-grey;
+            border-color:transparent;
+        }
+
+    }
+}

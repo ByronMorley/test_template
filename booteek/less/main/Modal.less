@@ -1,0 +1,82 @@
+@import "../_core/_config.less";
+
+/*-----------------------------------------
+                MODAL.LESS
+-----------------------------------------*/
+
+body {
+    padding-right:0;
+}
+.modal {
+
+
+    .modal-header {
+        background-color: @alpha-color;
+        color:@light-color;
+        position: relative;
+
+        h4 {
+            float:left;
+        }
+        button {
+            position:absolute;
+            right:0;
+            top:0;
+        }
+        .title {
+            font-weight:600;
+            font-size:18px;
+        }
+    }
+
+    .modal-body {
+        background-color: #fff;
+        border-radius:0;
+
+        img {
+            width:auto;
+            height:auto;
+        }
+
+        @media @XS, @XXS {
+            padding:5px;
+        }
+
+    }
+
+    .modal-content {
+        border-radius:0;
+        border:none;
+        background-color: transparent;
+    }
+
+    .modal-footer {
+
+        position:relative;
+        padding:10px;
+        z-index:1051;
+        background-color:#fff;
+        border-top:1px solid @mid-grey;
+
+        button {
+            margin:0;
+        }
+
+    }
+    .dropzone-action {
+        img {
+            width:16px;
+            height:16px;
+        }
+    }
+}
+
+#Form_AttachFile {
+    .action {
+        margin-left:0;
+    }
+}
+
+.modal-container {
+   display:none;
+}

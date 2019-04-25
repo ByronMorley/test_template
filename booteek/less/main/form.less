@@ -1,0 +1,92 @@
+@import "../_core/_config.less";
+
+/*-----------------------------------------
+                FORM.LESS
+-----------------------------------------*/
+
+
+textarea, select, input, button {
+    outline: transparent none;
+}
+
+form {
+
+    .field {
+
+        label {
+            padding-bottom:5px;
+        }
+        input, select {
+            width:100%;
+            margin-bottom:10px;
+            height:30px;
+        }
+
+    }
+    input[type=submit] {
+        background-color: #a2c614;
+        color: #fff;
+        margin: 5px 0;
+        padding: 10px;
+        border: 1px solid #a2c614;
+        line-height: 20px;
+    }
+
+}
+
+
+input, select, textarea {
+
+    display: inline-block;
+    *display: inline; /* for IE7*/
+    zoom: 1; /* for IE7*/
+    vertical-align: middle;
+    width: 100%;
+
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius:0px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    color: #444;
+    text-decoration: none;
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+    outline: none;
+    padding: 3px 0px 3px 3px;
+    margin: 5px 1px 3px 0px;
+    border: 1px solid #DDDDDD;
+
+    &:focus {
+        box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+        border: 1px solid rgba(81, 203, 238, 1);
+    }
+
+    .action  {
+        color:@mid-grey;
+    }
+
+}
+label {
+    display: inline-block;
+    *display: inline; /* for IE7*/
+    zoom: 1; /* for IE7*/
+    float: left;
+    text-align: left;
+    padding-top: 5px;
+    width: 100%;
+    padding-right: 10px;
+    color:@dark-grey;
+    font-weight: bold;
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px white inset;
+}
+

@@ -1,0 +1,64 @@
+@import "../_core/_config.less";
+
+/*-----------------------------------------
+            Word Bank. LESS
+-----------------------------------------*/
+
+
+ul.word-bank {
+    margin:0 !important;
+
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    padding:20px;
+    border:2px solid @mid-grey;
+    @media @XXS, @XS {
+        padding:10px;
+    }
+
+    li.phrase {
+        display:inline-block;
+        border:1px solid @mid-grey;
+        background-color: @mid-grey;
+        color:@light-color;
+
+        margin:30px;
+        padding:10px 15px;
+
+        @media @XXS, @XS {
+            margin:20px ;
+        }
+        span {
+            font-size:18px;
+        }
+    }
+}
+
+.phrase {
+
+    &.right-10 {
+        transform: rotate(10deg);
+    }
+    &.right-20 {
+        transform: rotate(20deg);
+    }
+    &.right-30 {
+        transform: rotate(30deg);
+    }
+    &.right-40 {
+        transform: rotate(40deg);
+    }
+    &.left-10 {
+        transform: rotate(350deg);
+    }
+    &.left-20 {
+        transform: rotate(340deg);
+    }
+    &.left-30 {
+        transform: rotate(330deg);
+    }
+    &.left-40 {
+        transform: rotate(320deg);
+    }
+}

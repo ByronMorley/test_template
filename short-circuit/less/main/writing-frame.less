@@ -1,0 +1,55 @@
+@import "../_core/_config.less";
+
+/*-----------------------------------------
+           Writing Frame.LESS
+-----------------------------------------*/
+
+@size:25px;
+@button-color:#ff5270;
+
+.writing-frame-icon {
+    position:absolute;
+    top:5px;
+    right:5px;
+}
+
+i.wf-icon {
+    width:@size;
+    height:@size;
+    text-align: center;
+    line-height:@size;
+    border:1px solid  @button-color;
+    color:@light-color;
+    background-color: @button-color;
+
+    &:hover {
+        border:1px solid  @button-color;
+        color:@button-color;
+        background-color: @light-color;
+    }
+
+}
+.setup-text {
+    padding:10px;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    font-weight:600;
+    background-color: @light-color;
+}
+textarea.htmleditor{
+    padding:10px;
+}
+
+input.action {
+    background-color: @zeta-color;
+    color: @light-color;
+    margin: 5px 0;
+    padding: 10px;
+    border: 1px solid @zeta-color;
+    line-height: 20px;
+    &:hover {
+        background-color: @light-color;
+        color: @zeta-color;
+        border: 1px solid @zeta-color;
+    }
+}

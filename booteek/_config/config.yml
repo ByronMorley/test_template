@@ -1,0 +1,7 @@
+---
+Name: Booteek
+After: 'framework/*','cms/*'
+---
+Page:
+  extensions:
+    - Booteek

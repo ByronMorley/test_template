@@ -1,0 +1,867 @@
+/*--------------------------- CONFIG.LESS --------------------------------*/
+/*  1170px  */
+/*  1170px  */
+/*  970px   */
+/*  750px   */
+/*  100%    */
+/*  100%    */
+
+/*--------------------------- CONFIG.LESS --------------------------------*/
+/*  1170px  */
+/*  1170px  */
+/*  970px   */
+/*  750px   */
+/*  100%    */
+/*  100%    */
+@import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css");
+/*-----------------------------------------
+            AUDIO.LESS
+-----------------------------------------*/
+.audio-block {
+  margin-bottom: 20px;
+}
+@media only screen and (min-width: 769px) and (max-width: 991px), only screen and (min-width: 480px) and (max-width: 768px), only screen and (max-width: 479px) {
+  .audio-block {
+    margin-bottom: 10px;
+  }
+}
+.audio-block .main-wrapper {
+  border-color: #659FA8 !important;
+  overflow: hidden;
+}
+@media only screen and (min-width: 769px) and (max-width: 991px), only screen and (min-width: 480px) and (max-width: 768px), only screen and (max-width: 479px) {
+  .audio-block .main-wrapper {
+    padding: 10px;
+  }
+}
+.audio-block .main-wrapper .question-wrapper {
+  background-color: #069;
+  padding: 20px;
+}
+@media only screen and (min-width: 769px) and (max-width: 991px), only screen and (min-width: 480px) and (max-width: 768px), only screen and (max-width: 479px) {
+  .audio-block .main-wrapper .question-wrapper {
+    padding: 10px;
+  }
+}
+.audio-block .main-wrapper .question-wrapper .glyphicon {
+  text-align: center;
+  width: 100%;
+  height: auto;
+}
+@media only screen and (min-width: 769px) and (max-width: 991px), only screen and (min-width: 480px) and (max-width: 768px), only screen and (max-width: 479px) {
+  .audio-block .main-wrapper .question-wrapper .glyphicon {
+    font-size: 30px;
+    line-height: 30px;
+  }
+}
+@media only screen and (max-width: 479px) {
+  .audio-block .main-wrapper .question-wrapper .glyphicon {
+    font-size: 18px;
+    line-height: 18px;
+  }
+}
+.audio-block .main-wrapper .question-wrapper .glyphicon:hover {
+  color: #659FA8;
+}
+.audio-block .main-wrapper .question-wrapper .question * {
+  text-align: center;
+  color: #fff;
+  margin: 0;
+}
+.audio-block .main-wrapper .bottom-wrapper {
+  overflow: hidden;
+  position: relative;
+  height: auto;
+}
+.audio-block .main-wrapper .bottom-wrapper.avatar {
+  height: 400px;
+}
+@media only screen and (min-width: 769px) and (max-width: 991px), only screen and (min-width: 480px) and (max-width: 768px), only screen and (max-width: 479px) {
+  .audio-block .main-wrapper .bottom-wrapper {
+    height: auto;
+  }
+}
+.audio-block .main-wrapper .bottom-wrapper .avatar {
+  height: 100%;
+}
+.audio-block .main-wrapper .bottom-wrapper .avatar img {
+  height: 350px;
+  width: auto;
+}
+@media only screen and (min-width: 769px) and (max-width: 991px), only screen and (min-width: 480px) and (max-width: 768px), only screen and (max-width: 479px) {
+  .audio-block .main-wrapper .bottom-wrapper .avatar {
+    height: auto;
+  }
+  .audio-block .main-wrapper .bottom-wrapper .avatar img {
+    height: auto;
+    width: 100%;
+  }
+}
+.audio-block .main-wrapper .bottom-wrapper .avatar.right {
+  float: right;
+}
+.audio-block .main-wrapper .bottom-wrapper .audio-section {
+  position: relative;
+  height: 100%;
+}
+@media only screen and (min-width: 769px) and (max-width: 991px), only screen and (min-width: 480px) and (max-width: 768px), only screen and (max-width: 479px) {
+  .audio-block .main-wrapper .bottom-wrapper .audio-section {
+    position: initial !important;
+  }
+}
+.audio-block .glyphicon-step-backward,
+.audio-block .glyphicon-step-forward {
+  display: none;
+}
+.audio-block .volume-meter-wrapper {
+  position: relative;
+}
+.audio-block .glyphicon {
+  color: #fff;
+  width: 100%;
+  line-height: 60px;
+  font-size: 60px;
+  cursor: pointer;
+  transition: ease all 0.5s;
+}
+@media only screen and (max-width: 479px) {
+  .audio-block .glyphicon {
+    width: 40px;
+    line-height: 40px;
+    font-size: 40px;
+  }
+}
+.avatar .audio-player {
+  position: absolute;
+}
+.audio-player {
+  position: relative;
+  height: 90px;
+  width: 100%;
+  bottom: 0;
+}
+.audio-player .col-xs-2 {
+  width: 16%;
+  float: left;
+}
+.audio-player .col-xs-8 {
+  width: 66.97%;
+  float: left;
+}
+.audio-player.solo {
+  position: relative;
+  margin-bottom: 20px;
+}
+@media only screen and (max-width: 479px) {
+  .audio-player {
+    height: 60px;
+  }
+}
+.audio-player .audio-panel {
+  background-color: #659FA8;
+  padding: 10px;
+  position: relative;
+  overflow: visible;
+  height: 100%;
+  text-align: center;
+}
+.audio-player .audio-panel .controls {
+  position: relative;
+  height: 100%;
+}
+@media only screen and (max-width: 479px) {
+  .audio-player .audio-panel .controls {
+    padding: 0 0px;
+  }
+  .audio-player .audio-panel .controls.middle {
+    padding: 0 10px;
+  }
+}
+.audio-player .audio-panel .controls .nav-controls {
+  height: 40px;
+}
+@media only screen and (max-width: 479px) {
+  .audio-player .audio-panel .controls .nav-controls {
+    height: 20px;
+  }
+}
+.audio-player .audio-panel .controls .audio-block-track {
+  top: 50%;
+  margin-top: -10px;
+  left: 0;
+  height: 20px;
+  background-color: #fff;
+  width: 100%;
+}
+.audio-player .audio-panel .audio-block-volume-hover-pad {
+  position: absolute;
+  right: -2px;
+  bottom: -2px;
+  top: -2px;
+  cursor: pointer;
+  z-index: 100;
+}
+.audio-player .audio-panel .audio-block-volume-button {
+  position: relative;
+  z-index: 101;
+}
+.audio-player .audio-panel .audio-block-volume-meter {
+  right: 0;
+  margin-right: 25px;
+  top: -101px;
+  position: absolute;
+  width: 60px;
+  height: 100px;
+  background-color: #659FA8;
+  padding: 20px 10px 5px 10px;
+  display: none;
+  cursor: pointer;
+}
+@media only screen and (max-width: 479px) {
+  .audio-player .audio-panel .audio-block-volume-meter {
+    width: 40px;
+    margin-right: 15px;
+  }
+}
+.audio-player .audio-panel .audio-block-volume-meter .audio-block-volume-track {
+  background-color: #fff;
+  height: 100%;
+  width: 50%;
+  margin: 0 25%;
+}
+.track {
+  position: relative;
+  cursor: pointer;
+}
+.track .track-line {
+  position: absolute;
+  left: 0;
+  background-color: #069;
+}
+.track.vertical .track-line {
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+}
+.track.horizontal .track-line {
+  top: 0;
+  height: 100%;
+  width: 0;
+}
+.audio-text {
+  display: none;
+}
+.audio-text p {
+  color: #000 !important;
+}
+.audio-text.current {
+  display: block;
+}
+
+/*--------------------------- CONFIG.LESS --------------------------------*/
+/*  1170px  */
+/*  1170px  */
+/*  970px   */
+/*  750px   */
+/*  100%    */
+/*  100%    */
+/*-----------------------------------------
+             BLOCK.LESS
+-----------------------------------------*/
+.block {
+  position: relative;
+  margin-bottom: 10px;
+}
+.block h1,
+.block h2,
+.block h3,
+.block h4,
+.block h5,
+.block h6 {
+  font-weight: 700;
+}
+.block h2 {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+.block h3 {
+  font-size: 16px;
+}
+.block.text-block .content {
+  overflow: visible;
+}
+.block.pagination-block {
+  margin-bottom: 100px;
+}
+.block.video-block .description {
+  margin-bottom: 15px;
+}
+.block.video-block video {
+  width: 100%;
+  height: auto;
+}
+.block.image-block {
+  width: 100%;
+  clear: both;
+}
+.block.image-block img {
+  width: 100%;
+  height: auto;
+  border: none;
+}
+.block.image-block img.small {
+  width: 20%;
+}
+.block.image-block img.small.center {
+  margin-left: 40%;
+  margin-right: 40%;
+}
+.block.image-block img.medium {
+  width: 40%;
+}
+.block.image-block img.medium.center {
+  margin-left: 30%;
+  margin-right: 30%;
+}
+.block.image-block img.large {
+  width: 60%;
+}
+.block.image-block img.large.center {
+  margin-left: 20%;
+  margin-right: 20%;
+}
+.block.image-block img.full-width {
+  width: 100%;
+}
+.block.image-block img.full-width.center {
+  margin-left: 0%;
+  margin-right: 0%;
+}
+.block.image-block img.left {
+  float: left;
+}
+.block.image-block img.right {
+  float: right;
+}
+.block.link-block .link-elements {
+  margin-left: 40px;
+}
+.block.link-block .link-elements > li {
+  height: 40px;
+  clear: both;
+  width: 100%;
+  line-height: 40px;
+  font-size: 14px;
+}
+.block.link-block .link-elements > li i,
+.block.link-block .link-elements > li span {
+  height: 40px;
+  line-height: 40px;
+}
+.block.link-block .link-elements > li a {
+  display: block;
+}
+.block.link-block .link-elements > li a span {
+  text-decoration: underline;
+}
+.block.link-block .link-elements > li .link-prompt {
+  margin-right: 5px;
+  font-weight: bold;
+}
+.block.link-block .link-elements > li i {
+  padding: 0 12px;
+  font-size: 22px;
+}
+.block .border {
+  border: 1px solid #444;
+}
+.block .caption {
+  color: #444;
+  font-style: italic;
+  font-size: 12px;
+  text-align: center;
+  margin: 5px 0;
+}
+
+/*--------------------------- CONFIG.LESS --------------------------------*/
+/*  1170px  */
+/*  1170px  */
+/*  970px   */
+/*  750px   */
+/*  100%    */
+/*  100%    */
+/*-----------------------------------------
+          CONVERSATION.LESS
+-----------------------------------------*/
+.conversation-block {
+  overflow: hidden;
+}
+.conversation-block .conversation-bubble {
+  position: relative;
+  clear: both;
+  max-width: 70%;
+  margin: 10px 10px 20px 10px ;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  border: 1px solid #aaa;
+  -webkit-box-shadow: 10px 10px 5px -4px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px -4px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 5px -4px rgba(0, 0, 0, 0.75);
+}
+.conversation-block .conversation-bubble .glyphicon-triangle-bottom {
+  position: absolute;
+  right: 10px;
+  bottom: -20px;
+  font-size: 26px;
+  display: block;
+  top: auto;
+  text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.75);
+}
+.conversation-block .conversation-bubble .glyphicon-triangle-bottom.right {
+  right: 10px;
+  left: auto;
+}
+.conversation-block .conversation-bubble .glyphicon-triangle-bottom.left {
+  right: auto;
+  left: 10px;
+}
+.conversation-block .conversation-bubble .bubble-author {
+  padding: 10px 10px 10px 10px;
+  float: left;
+  width: 100%;
+  color: #000;
+  text-align: left;
+  font-weight: 600;
+  font-size: 20px;
+}
+.conversation-block .conversation-bubble p {
+  margin: 0;
+  padding: 10px;
+  font-size: 18px;
+}
+.conversation-block .conversation-bubble.left {
+  float: left;
+}
+.conversation-block .conversation-bubble.right {
+  float: right;
+}
+
+/*--------------------------- CONFIG.LESS --------------------------------*/
+/*  1170px  */
+/*  1170px  */
+/*  970px   */
+/*  750px   */
+/*  100%    */
+/*  100%    */
+/*-----------------------------------------
+            IMAGE.LESS
+-----------------------------------------*/
+.image-block {
+  width: 100%;
+  clear: both;
+}
+.image-wrapper {
+  display: block;
+  position: relative;
+}
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: none;
+}
+img.small {
+  width: 20%;
+}
+img.small.center {
+  margin-left: 40%;
+  margin-right: 40%;
+}
+img.medium {
+  width: 40%;
+}
+img.medium.center {
+  margin-left: 30%;
+  margin-right: 30%;
+}
+img.large {
+  width: 60%;
+}
+img.large.center {
+  margin-left: 20%;
+  margin-right: 20%;
+}
+img.full-width {
+  width: 100%;
+}
+img.full-width.center {
+  margin-left: 0%;
+  margin-right: 0%;
+}
+img.left {
+  float: left;
+}
+img.right {
+  float: right;
+}
+.border {
+  border: 1px solid #444;
+}
+.caption {
+  color: #444;
+  font-style: italic;
+  font-size: 12px;
+  text-align: center;
+}
+.hi-res-download {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.8);
+  bottom: 0;
+  right: 0;
+  transition: background-color ease-in 0.5s;
+}
+.hi-res-download:hover {
+  background-color: #fff;
+}
+.hi-res-download:hover a.hi-res-download-link {
+  color: #000;
+}
+.hi-res-download a.hi-res-download-link {
+  color: #fff;
+  padding: 10px;
+}
+
+/*--------------------------- CONFIG.LESS --------------------------------*/
+/*  1170px  */
+/*  1170px  */
+/*  970px   */
+/*  750px   */
+/*  100%    */
+/*  100%    */
+/*-----------------------------------------
+                LINK.LESS
+-----------------------------------------*/
+
+/*--------------------------- CONFIG.LESS --------------------------------*/
+/*  1170px  */
+/*  1170px  */
+/*  970px   */
+/*  750px   */
+/*  100%    */
+/*  100%    */
+/*-----------------------------------------
+            LOGO.LESS
+-----------------------------------------*/
+.logo-block ul {
+  overflow: hidden;
+}
+@media only screen and (min-width: 1400px), only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 769px) and (max-width: 991px) {
+  .logo-block ul.right li {
+    float: right;
+    margin-left: 20px;
+    margin-right: 0px;
+  }
+  .logo-block ul.left li {
+    float: left;
+    margin-right: 20px;
+    margin-left: 0px;
+  }
+  .logo-block ul.center li {
+    position: relative;
+    width: 100%;
+    text-align: center;
+  }
+  .logo-block ul.center li img {
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+  }
+}
+.logo-block li {
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 0px;
+}
+.logo-block li:last-child {
+  margin-bottom: 0px;
+}
+.logo-block li img {
+  max-height: 120px;
+  width: auto;
+}
+@media only screen and (max-width: 479px), only screen and (min-width: 480px) and (max-width: 768px) {
+  .logo-block li {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .logo-block li img {
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+/*--------------------------- CONFIG.LESS --------------------------------*/
+/*  1170px  */
+/*  1170px  */
+/*  970px   */
+/*  750px   */
+/*  100%    */
+/*  100%    */
+/*-----------------------------------------
+            PAGINATION.LESS
+-----------------------------------------*/
+.page-item.active .page-link {
+  z-index: 1;
+  color: #fff;
+  background-color: #6E348C;
+  border-color: #6E348C;
+}
+.pagination.mx-right {
+  margin-left: auto!important;
+}
+.page-item.disabled a.page-link {
+  background-color: #000000;
+  color: #9D9D9D;
+  border-color: transparent;
+}
+
+/*--------------------------- CONFIG.LESS --------------------------------*/
+/*  1170px  */
+/*  1170px  */
+/*  970px   */
+/*  750px   */
+/*  100%    */
+/*  100%    */
+/*-----------------------------------------
+                POEM.LESS
+-----------------------------------------*/
+.block.poem-block h3 {
+  color: #000000;
+  margin-bottom: 20px;
+  font-size: 22px;
+}
+.block.poem-block h3 span {
+  display: inline-block;
+  color: #9D9D9D;
+}
+.block.poem-block .content {
+  padding: 20px;
+  font-size: 16px;
+  color: #000;
+  line-height: 36px;
+}
+.fade:not(.show) {
+  opacity: 1;
+}
+
+/*--------------------------- CONFIG.LESS --------------------------------*/
+/*  1170px  */
+/*  1170px  */
+/*  970px   */
+/*  750px   */
+/*  100%    */
+/*  100%    */
+/*-----------------------------------------
+          REVEAL ANSWER.LESS
+-----------------------------------------*/
+.reveal-answer-block {
+  margin-bottom: 20px;
+}
+
+.tab-block .nav-tabs {
+  margin-bottom: 10px;
+}
+
+/*--------------------------- CONFIG.LESS --------------------------------*/
+/*  1170px  */
+/*  1170px  */
+/*  970px   */
+/*  750px   */
+/*  100%    */
+/*  100%    */
+/*-----------------------------------------
+            Word Bank. LESS
+-----------------------------------------*/
+ul.word-bank {
+  margin: 0 !important;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  padding: 20px;
+  border: 2px solid #9D9D9D;
+}
+@media only screen and (max-width: 479px), only screen and (min-width: 480px) and (max-width: 768px) {
+  ul.word-bank {
+    padding: 10px;
+  }
+}
+ul.word-bank li.phrase {
+  display: inline-block;
+  border: 1px solid #9D9D9D;
+  background-color: #9D9D9D;
+  color: #FFFFFF;
+  margin: 30px;
+  padding: 10px 15px;
+}
+@media only screen and (max-width: 479px), only screen and (min-width: 480px) and (max-width: 768px) {
+  ul.word-bank li.phrase {
+    margin: 20px ;
+  }
+}
+ul.word-bank li.phrase span {
+  font-size: 18px;
+}
+.phrase.right-10 {
+  transform: rotate(10deg);
+}
+.phrase.right-20 {
+  transform: rotate(20deg);
+}
+.phrase.right-30 {
+  transform: rotate(30deg);
+}
+.phrase.right-40 {
+  transform: rotate(40deg);
+}
+.phrase.left-10 {
+  transform: rotate(350deg);
+}
+.phrase.left-20 {
+  transform: rotate(340deg);
+}
+.phrase.left-30 {
+  transform: rotate(330deg);
+}
+.phrase.left-40 {
+  transform: rotate(320deg);
+}
+
+/*--------------------------- CONFIG.LESS --------------------------------*/
+/*  1170px  */
+/*  1170px  */
+/*  970px   */
+/*  750px   */
+/*  100%    */
+/*  100%    */
+/*-----------------------------------------
+         YOU TUBE VIDEOS.LESS
+-----------------------------------------*/
+.videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16:9 */
+  padding-top: 25px;
+  height: 0;
+}
+.videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.you-tube-block.small {
+  width: 30%;
+  margin-left: 35%;
+  margin-right: 35%;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .you-tube-block.small {
+    width: 40%;
+    margin-left: 30%;
+    margin-right: 30%;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 991px) {
+  .you-tube-block.small {
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 768px), only screen and (max-width: 479px) {
+  .you-tube-block.small {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+.you-tube-block.medium {
+  width: 40%;
+  margin-left: 30%;
+  margin-right: 30%;
+}
+@media only screen and (min-width: 769px) and (max-width: 991px) {
+  .you-tube-block.medium {
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 768px), only screen and (max-width: 479px) {
+  .you-tube-block.medium {
+    width: 100%;
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+}
+.you-tube-block.large {
+  width: 60%;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+@media only screen and (min-width: 480px) and (max-width: 768px), only screen and (max-width: 479px) {
+  .you-tube-block.large {
+    width: 100%;
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+}
+.you-tube-block.full-width {
+  width: 100%;
+  margin-left: 0%;
+  margin-right: 0%;
+}
+
+.background-image img {
+  /* Set rules to fill background */
+  min-height: 100%;
+  min-width: 1024px;
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: auto;
+  /* Set up positioning */
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  opacity: 0.5;
+}
+.background-image img.top {
+  -webkit-animation: fadeOutHalf 1s both ease-in;
+  -moz-animation: fadeOutHalf 1s both ease-in;
+  animation: fadeOutHalf 1s both ease-in;
+}
+.background-image img.fade-in {
+  -webkit-animation: fadeInHalf 1s both ease-in;
+  -moz-animation: fadeInHalf 1s both ease-in;
+  animation: fadeInHalf 1s both ease-in;
+}
+@media screen and (max-width: 1024px) {
+  .background-image {
+    /* Specific to this particular image */
+  }
+  .background-image img {
+    left: 50%;
+    margin-left: -512px;
+    /* 50% */
+  }
+}

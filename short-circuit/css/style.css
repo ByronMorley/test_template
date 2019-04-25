@@ -1,0 +1,105 @@
+/*--------------------------- CONFIG.LESS --------------------------------*/
+/*  1170px  */
+/*  1170px  */
+/*  970px   */
+/*  750px   */
+/*  100%    */
+/*  100%    */
+
+/*--------------------------- CONFIG.LESS --------------------------------*/
+/*  1170px  */
+/*  1170px  */
+/*  970px   */
+/*  750px   */
+/*  100%    */
+/*  100%    */
+/*-----------------------------------------
+             Aside.LESS
+-----------------------------------------*/
+.activity-session-widget .pane .head {
+  border-bottom: 1px solid #9D9D9D;
+  margin-bottom: 10px;
+}
+.activity-session-widget .pane .body {
+  border-bottom: 1px solid #9D9D9D;
+}
+.activity-session-widget .pane .body p {
+  margin-bottom: 10px;
+}
+.activity-session-widget .pane .foot ul li {
+  float: right;
+  margin-left: 5px;
+}
+.activity-session-widget .pane button:last-child,
+.activity-session-widget .pane input[type=submit]:last-child {
+  margin-right: 0;
+  margin-left: 5px;
+}
+.activity-session-widget .as-title {
+  color: #232323;
+  font-weight: 600;
+  padding-bottom: 10px;
+  font-size: 18px;
+}
+.activity-session-widget .Actions input {
+  float: right;
+}
+.activity-session-widget fieldset h2 {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #FF0000;
+}
+
+/*--------------------------- CONFIG.LESS --------------------------------*/
+/*  1170px  */
+/*  1170px  */
+/*  970px   */
+/*  750px   */
+/*  100%    */
+/*  100%    */
+/*-----------------------------------------
+           Writing Frame.LESS
+-----------------------------------------*/
+.writing-frame-icon {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+i.wf-icon {
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  line-height: 25px;
+  border: 1px solid #ff5270;
+  color: #FFFFFF;
+  background-color: #ff5270;
+}
+i.wf-icon:hover {
+  border: 1px solid #ff5270;
+  color: #ff5270;
+  background-color: #FFFFFF;
+}
+.setup-text {
+  padding: 10px;
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  font-weight: 600;
+  background-color: #FFFFFF;
+}
+textarea.htmleditor {
+  padding: 10px;
+}
+input.action {
+  background-color: #A2C614;
+  color: #FFFFFF;
+  margin: 5px 0;
+  padding: 10px;
+  border: 1px solid #A2C614;
+  line-height: 20px;
+}
+input.action:hover {
+  background-color: #FFFFFF;
+  color: #A2C614;
+  border: 1px solid #A2C614;
+}

@@ -1,0 +1,27 @@
+{
+  "name": "rgb-software/silverstripe-building-blocks",
+  "description": "custom content block for your page",
+  "type": "silverstripe-module",
+  "homepage": "http://github.com/your-vendor-name/module-name",
+  "keywords": ["silverstripe", "content", "building"],
+  "license": "BSD-3-Clause",
+  "authors": [
+    {"name": "Byron Morley","email": "byron@regbsoftware.co.uk"}
+  ],
+  "support": {
+    "issues": "http://github.com/your-vendor-name/module-name/issues"
+  },
+  "config": {
+    "vendor-dir": "../"
+  },
+  "require": {
+    "micschk/silverstripe-chunkeduploadfield": "^1.1"
+  },
+  "extra": {
+    "installer-name": "building-blocks",
+    "screenshots": [
+      "relative/path/screenshot1.png",
+      "http://myhost.com/screenshot2.png"
+    ]
+  }
+}

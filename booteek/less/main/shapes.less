@@ -1,0 +1,43 @@
+@import "../_core/_config.less";
+
+/*-----------------------------------------
+                SHAPES.LESS
+-----------------------------------------*/
+
+.triangle {
+    position: absolute;
+    width: 0;
+    height: 0;
+    transition: all .2s ease-in-out;
+
+    &.bottom {
+
+        border-bottom: 80px solid rgba(0, 0, 0, 0.3);
+        bottom: 0;
+
+        &.right {
+            border-left: 80px solid transparent;
+            right: 0;
+        }
+        &.left {
+            border-right: 80px solid transparent;
+            left:0;
+        }
+    }
+
+    &.top {
+        border-top: 80px solid rgba(0, 0, 0, 0.3);
+        top:0;
+        &.right {
+            border-left: 80px solid transparent;
+            right:0;
+        }
+        &.left {
+            border-right: 80px solid transparent;
+            left:0;
+        }
+    }
+
+
+
+}

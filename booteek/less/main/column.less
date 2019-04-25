@@ -1,0 +1,214 @@
+@import "../_core/_config.less";
+
+/*-----------------------------------------
+            COLUMN.LESS
+-----------------------------------------*/
+
+
+ul.columns {
+
+    overflow: hidden;
+    width: 100%;
+    margin: 0;
+
+    & > li {
+        float:left;
+    }
+
+    &.column-5 {
+
+        & > li {
+
+            @media @XL {
+                width: 20%;
+                padding: 0 5px 10px 5px;
+                @nth: 5;
+                &:nth-child(@{nth}n+1) {
+                    padding-left: 0px;
+                }
+
+                &:nth-child(@{nth}n+5) {
+                    padding-right: 0px;
+                }
+            }
+            @media @LG {
+                width: 25%;
+                padding: 0 5px 10px 5px;
+
+                @nth: 4;
+                &:nth-child(@{nth}n+1) {
+                    padding-left: 0px;
+                }
+
+                &:nth-child(@{nth}n+4) {
+                    padding-right: 0px;
+                }
+
+            }
+            @media @MD {
+                width: 33%;
+                padding: 0 5px 10px 5px;
+
+
+                @nth: 3;
+                &:nth-child(@{nth}n+1) {
+                    padding-left: 0;
+                }
+
+                &:nth-child(@{nth}n+3) {
+                    padding-right: 0;
+                    width: 34%;
+                }
+            }
+            @media @SM {
+                width: 50%;
+                padding: 0 5px 10px 5px;
+
+                @nth: 2;
+                &:nth-child(@{nth}n+1) {
+                    padding-left: 0px;
+                }
+
+                &:nth-child(@{nth}n+2) {
+                    padding-right: 0px;
+                }
+            }
+            @media @XS, @XXS {
+                width: 100%;
+                padding-bottom: 10px;
+            }
+        }
+    }
+
+    &.column-4 {
+        & > li {
+            @media @LG, @XL {
+                width: 25%;
+                padding: 0 5px 10px 5px;
+
+                @nth: 4;
+                &:nth-child(@{nth}n+1) {
+                    padding-left: 0px;
+                }
+
+                &:nth-child(@{nth}n+4) {
+                    padding-right: 0px;
+                }
+            }
+            @media @MD {
+                width: 33%;
+                padding: 0 5px 10px 5px;
+
+
+                @nth: 3;
+                &:nth-child(@{nth}n+1) {
+                    padding-left: 0;
+                }
+
+                &:nth-child(@{nth}n+3) {
+                    padding-right: 0;
+                    width: 34%;
+                }
+            }
+            @media @SM {
+                width: 50%;
+                padding: 0 5px 10px 5px;
+
+                @nth: 2;
+                &:nth-child(@{nth}n+1) {
+                    padding-left: 0px;
+                }
+
+                &:nth-child(@{nth}n+2) {
+                    padding-right: 0px;
+                }
+            }
+            @media @XS, @XXS {
+                width: 100%;
+                padding-bottom: 10px;
+            }
+        }
+    }
+
+    &.column-3 {
+
+        & > li {
+            @media @LG, @XL {
+                width: 33%;
+                padding: 0 5px 10px 5px;
+
+
+                @nth: 3;
+                &:nth-child(@{nth}n+1) {
+                    padding-left: 0;
+                }
+
+                &:nth-child(@{nth}n+3) {
+                    padding-right: 0;
+                    width: 34%;
+                }
+            }
+            @media @MD, @SM {
+                width: 50%;
+                padding: 0 5px 10px 5px;
+
+                @nth: 2;
+                &:nth-child(@{nth}n+1) {
+                    padding-left: 0px;
+                }
+
+                &:nth-child(@{nth}n+2) {
+                    padding-right: 0px;
+                }
+            }
+            @media @XS, @XXS {
+                width: 100%;
+                padding-bottom: 10px;
+            }
+        }
+    }
+
+    &.column-2 {
+
+        & > li {
+            @media @XL, @LG, @MD {
+                width: 50%;
+                padding: 0 5px 10px 5px;
+
+                @nth: 2;
+                &:nth-child(@{nth}n+1) {
+                    padding-left: 0px;
+                }
+
+                &:nth-child(@{nth}n+2) {
+                    padding-right: 0px;
+                }
+            }
+            @media @XS, @XXS, @SM {
+                width: 100%;
+                padding-bottom: 10px;
+            }
+        }
+    }
+
+    &.column-1 {
+        & > li {
+            width: 100%;
+            padding-bottom: 10px;
+        }
+    }
+
+    &.col-2 {
+
+        & > li {
+            float: left;
+            width: ~"calc(50% - 5px)";
+            margin: 0 0 0 10px;
+
+            &:first-child {
+                margin-left: 0;
+            }
+        }
+    }
+}
+

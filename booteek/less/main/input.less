@@ -1,0 +1,115 @@
+@import "../_core/_config.less";
+
+/*-----------------------------------------
+                INPUT.LESS
+-----------------------------------------*/
+
+@thumb-color:@alpha-color;
+
+@length:300px;
+@girth:6px;
+@thumb-width:16px;
+@thumb-height:16px;
+
+
+input[type=range] {
+
+    -webkit-appearance: none;
+    border: 1px solid white;
+   width: @length;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    width: @length;
+    height: @girth;
+    background: #ddd;
+    border: none;
+    border-radius: 3px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: none;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: @thumb-color;
+    margin-top: -4px;
+}
+
+input[type=range]:focus {
+    outline: none;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #ccc;
+}
+
+input[type=range]::-moz-range-track {
+    width: @length;
+    height: @girth;
+    background: #ddd;
+    border: none;
+    border-radius: 3px;
+}
+
+input[type=range]::-moz-range-thumb {
+    border: none;
+    height: @thumb-height;
+    width: @thumb-width;
+    border-radius: 50%;
+    background: @thumb-color;
+}
+
+
+
+
+input[type=range]:-moz-focusring {
+    outline: 1px solid white;
+    outline-offset: -1px;
+}
+
+input[type=range]::-ms-track {
+    width: @length;
+    height: @girth;
+    background: transparent;
+    border-color: transparent;
+    border-width: 6px 0;
+    color: transparent;
+}
+
+input[type=range]::-ms-fill-lower {
+    background: #777;
+    border-radius: 10px;
+}
+
+input[type=range]::-ms-fill-upper {
+    background: #ddd;
+    border-radius: 10px;
+}
+
+input[type=range]::-ms-thumb {
+    border: none;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: @thumb-color;
+}
+
+input[type=range]:focus::-ms-fill-lower {
+    background: #888;
+}
+
+input[type=range]:focus::-ms-fill-upper {
+    background: #ccc;
+}
+
+input[type=range][orient=vertical]
+{
+    writing-mode: bt-lr;
+    -webkit-appearance: slider-vertical;
+    width: @girth;
+    height: @length;
+    padding: 0 5px;
+}
+
